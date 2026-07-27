@@ -1,0 +1,21 @@
+generated: '2026-07-19'
+method: searched
+source: https://academy.infraspeak.com/en/support/solutions/articles/70000154828-api-documentation
+provider: Infraspeak
+versioning:
+  scheme: version-number
+  current: v3
+  docs: https://api.infraspeak.com/docs
+  notes: API documentation article states the current version is v3; REST architecture.
+deprecation:
+  policy_url: null
+  sunset_header: unknown
+  notes: No published deprecation policy or RFC 8594 Sunset/Deprecation header support found.
+sla:
+  url: null
+  uptime_target: null
+status_page: null
+status_page_notes: >-
+  No public status page found. status.infraspeak.com does not resolve. A status page
+  pointer is intentionally NOT wired because none was verified.
+deprecated_operations: []

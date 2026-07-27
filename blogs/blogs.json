@@ -1,0 +1,14 @@
+{
+  "repo": "infraspeak",
+  "feeds": [
+    {
+      "source": "https://academy.infraspeak.com/en/support/solutions",
+      "feed_url": "https://academy.infraspeak.com/en/support/solutions",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-07-25T15:00:33Z"
+}

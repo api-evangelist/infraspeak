@@ -1,0 +1,32 @@
+generated: '2026-07-19'
+method: searched
+provider: Infraspeak
+hosts:
+- host: https://infraspeak.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://api.infraspeak.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+notes: >-
+  No /.well-known/ discovery documents are published on either host (all 404 as of
+  2026-07-19). Absence recorded as valid data; no raw files saved and no WellKnown/
+  SecurityTxt pointer wired since nothing was found.

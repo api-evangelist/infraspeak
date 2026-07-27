@@ -1,0 +1,30 @@
+generated: '2026-07-19'
+method: searched
+source: https://api.infraspeak.com/docs
+provider: Infraspeak
+notes: >-
+  Cross-cutting API semantics for the Infraspeak REST API. Grounded in the published API
+  documentation article and directly observed live responses; fields that could not be
+  verified (no retrievable OpenAPI; Stoplight reference is client-rendered) are left as
+  unknown rather than guessed. No idempotency contract was documented, so no Idempotency
+  pointer is wired.
+architecture: REST
+versioning:
+  scheme: version-number
+  current: v3
+  see: lifecycle/infraspeak-lifecycle.yml
+authentication:
+  style: unknown
+  notes: Auth scheme not verifiable from the public surface reached; API access is gated (api.infraspeak.com root redirects to login).
+idempotency:
+  supported: unknown
+pagination:
+  style: unknown
+error_envelope:
+  format: custom
+  shape: '{"status":"error","error":{"http_code","message","more_info"}}'
+  see: errors/infraspeak-error-envelope.yml
+rate_limiting:
+  signaled: unknown
+request_tracing:
+  request_id_header: unknown

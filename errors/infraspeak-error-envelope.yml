@@ -1,0 +1,41 @@
+generated: '2026-07-19'
+method: searched
+source: https://api.infraspeak.com (live responses observed 2026-07-19)
+provider: Infraspeak
+format: custom
+notes: >-
+  Error envelope captured verbatim from live responses on the Infraspeak API host
+  (api.infraspeak.com). Not RFC 9457 problem+json. No OpenAPI document was retrievable
+  at a static URL, so this catalog is grounded only in directly observed responses;
+  additional status codes/titles should be enriched from the Stoplight reference when
+  a spec becomes available.
+envelope:
+  shape: |
+    {
+      "status": "error",
+      "error": {
+        "http_code": <int>,
+        "message": "<human message>",
+        "more_info": "<url to the docs>"
+      }
+    }
+  fields:
+  - name: status
+    description: Constant "error" on failure responses
+  - name: error.http_code
+    description: HTTP status code echoed in the body
+  - name: error.message
+    description: Human-readable error message
+  - name: error.more_info
+    description: Pointer to documentation for the error
+problems:
+- status: 404
+  title: Not Found
+  observed: true
+  example:
+    status: error
+    error:
+      http_code: 404
+      message: An error has occurred during the request.
+      more_info: __url to the docs__
+  evidence: GET https://api.infraspeak.com/v3 and unknown paths return this envelope

@@ -1,0 +1,35 @@
+generated: '2026-07-19'
+method: searched
+source: https://web.infraspeak.com/trust-center/
+provider: Infraspeak
+notes: >-
+  Conformance asserted from Infraspeak's public Trust Center. The API architecture
+  facts (REST, versioned) are taken from the published API documentation article; no
+  OpenAPI document was retrievable at a static URL (the Stoplight reference at
+  api.infraspeak.com/docs is client-rendered), so spec-derived standards are left
+  unasserted rather than guessed.
+standards:
+- id: iso-27001
+  conforms: true
+  evidence: Trust Center states ISO 27001 certified (information security management)
+- id: gdpr
+  conforms: true
+  evidence: Trust Center states GDPR compliant (EU data protection)
+- id: rest
+  conforms: true
+  evidence: API documentation article describes a REST API (v3) at api.infraspeak.com
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: >-
+    Observed error responses use a custom envelope
+    {"status":"error","error":{"http_code","message","more_info"}}, not
+    application/problem+json
+- id: soc2
+  conforms: false
+- id: pci-dss
+  conforms: false
+- id: hipaa
+  conforms: false
+- id: oauth2
+  conforms: unknown
+  evidence: Auth scheme not verifiable without a retrievable OpenAPI or docs page

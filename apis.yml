@@ -1,7 +1,15 @@
 aid: infraspeak
 name: Infraspeak
-description: Infraspeak is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Infraspeak is an intelligent facilities and maintenance management platform (CMMS/IWMS/IFM)
+  founded in Porto, Portugal, that connects an entire operation with end-to-end collaboration,
+  complete asset visibility, and intelligent automation. Facility and maintenance teams use
+  Infraspeak to manage assets, work orders, preventive maintenance schedules, failures, stock,
+  suppliers, and contracts across buildings and sites. The platform exposes a public REST API
+  (currently v3) hosted at api.infraspeak.com and documented on Stoplight, plus a growing
+  integrations layer ("Infraspeak Hub") with connectors for ERP, PMS, BMS, energy, and
+  collaboration systems such as SAP, Xero, and Opera. Infraspeak is backed by 500 Global and
+  other investors.
 url: https://raw.githubusercontent.com/api-evangelist/infraspeak/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,17 +17,100 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://a.storyblok.com/f/166232/1920x1080/a21027f7df/thumb-infraspeak.jpg
 tags:
 - Company
-apis: []
+- Facilities Management
+- Maintenance
+- CMMS
+- IWMS
+- Asset Management
+- Field Service
+- Building Management
+- Intelligent Maintenance
+apis:
+- name: Infraspeak REST API
+  description: >-
+    Infraspeak's public REST API (v3) for programmatic access to facilities and maintenance
+    management resources — assets, work orders, failures, preventive maintenance, stock,
+    suppliers, and more. Documented on Stoplight and served from api.infraspeak.com.
+  humanURL: https://api.infraspeak.com/docs
+  baseURL: https://api.infraspeak.com
+  tags:
+  - Facilities Management
+  - Maintenance
+  - REST
+  properties:
+  - type: Documentation
+    url: https://api.infraspeak.com/docs
+  - type: APIReference
+    url: https://api.infraspeak.com/docs/infraspeak-api
+  - type: ErrorCatalog
+    url: errors/infraspeak-error-envelope.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/infraspeak-domain-security.yml
 - type: Website
   url: https://infraspeak.com
+- type: DeveloperPortal
+  url: https://api.infraspeak.com/docs
+- type: Documentation
+  url: https://api.infraspeak.com/docs
+- type: APIReference
+  url: https://api.infraspeak.com/docs/infraspeak-api
+- type: GettingStarted
+  url: https://academy.infraspeak.com/en/support/solutions/articles/70000154828-api-documentation
+- type: Support
+  url: https://academy.infraspeak.com/en/support/solutions
+- type: Blog
+  url: https://blog.infraspeak.com
+- type: GitHubOrganization
+  url: https://github.com/infraspeak
+- type: Integrations
+  url: https://infraspeak.com/en/integrations
+- type: Pricing
+  url: https://infraspeak.com/en/pricing
+- type: SignUp
+  url: https://new.infraspeak.com/
+- type: Login
+  url: https://new.infraspeak.com/
+- type: TermsOfService
+  url: https://infraspeak.com/en/terms-of-use
+- type: PrivacyPolicy
+  url: https://infraspeak.com/en/privacy-policy
+- type: TrustCenter
+  url: https://web.infraspeak.com/trust-center/
+- type: Compliance
+  url: https://web.infraspeak.com/trust-center/
+- type: Conformance
+  url: conformance/infraspeak-conformance.yml
+- type: LLMsTxt
+  url: llms/infraspeak-llms.txt
+- type: Lifecycle
+  url: lifecycle/infraspeak-lifecycle.yml
+- type: Conventions
+  url: conventions/infraspeak-conventions.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

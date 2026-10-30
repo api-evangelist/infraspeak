@@ -64,6 +64,96 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Infraspeak is a company surfaced as a portfolio company of 500-global and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Infraspeak is an intelligent facilities and maintenance management platform (CMMS/IWMS/IFM) founded in Porto, Portugal, that connects an entire operation with end-to-end collaboration, complete asset visibility, and intelligent automation. Facility and maintenance teams use Infraspeak to manage assets, work orders, preventive maintenance schedules, failures, stock, suppliers, and contracts across buildings and sites. The platform exposes a public REST API (currently v3) hosted at api.infraspeak.com and documented on Stoplight, plus a growing integrations layer ("Infraspeak Hub") with connectors for ERP, PMS, BMS, energy, and collaboration systems such as SAP, Xero, and Opera. Infraspeak is backed by 500 Global and other investors.
 
-Backed by: 500-global — https://infraspeak.com
+**Areas:** Company · Facilities Management · Maintenance · CMMS · IWMS · Asset Management · Field Service · Building Management · Intelligent Maintenance
+
+## Infraspeak on APIs.io
+
+Everything profiled for Infraspeak is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/infraspeak/](https://apis.io/providers/infraspeak/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Infraspeak REST API](https://apis.io/apis/infraspeak/infraspeak-rest-api/) — Infraspeak's public REST API (v3) for programmatic access to facilities and maintenance management resources — assets, work orders, failures, preventive…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Infraspeak Domain Security](https://apis.io/security/infraspeak/infraspeak-domain-security/)
+- [Infraspeak Trust Center](https://apis.io/security/infraspeak/infraspeak-trust-center/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://infraspeak.com)
+- [Documentation](https://api.infraspeak.com/docs)
+- [Getting started](https://academy.infraspeak.com/en/support/solutions/articles/70000154828-api-documentation)
+- [API reference](https://api.infraspeak.com/docs/infraspeak-api)
+- [Pricing](https://infraspeak.com/en/pricing)
+- [Sign up](https://new.infraspeak.com/)
+- [Support](https://academy.infraspeak.com/en/support/solutions)
+- [Blog](https://infraspeak.com/en/blog)
+- [Compliance](https://web.infraspeak.com/trust-center/)
+- [Trust centre](https://web.infraspeak.com/trust-center/)
+- [Terms of service](https://infraspeak.com/en/terms-of-use)
+- [Privacy policy](https://infraspeak.com/en/privacy-policy)
+- [GitHub](https://github.com/infraspeak)
+
+## API Evangelist rating
+
+**Kin Score 25.7** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 45.2 |
+| Access clarity | 31.6 |
+
+**Agent readiness 2.9** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 18.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/infraspeak/](https://apis.io/providers/infraspeak/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Infraspeak: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/infraspeak/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
